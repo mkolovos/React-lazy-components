@@ -1,5 +1,5 @@
 
-import React, { Component, memo } from 'react';
+import React, { memo } from 'react';
 import { Carousel } from 'element-react'
 
 function MyCarousel(props) {
@@ -10,7 +10,7 @@ function MyCarousel(props) {
             props.imageList.map((item, index) => {
               return (
                 <Carousel.Item key={index}>
-                 <img src={item} /> 
+                 <img src={item} alt="Carousel item"/> 
                 </Carousel.Item>
               )
             })
